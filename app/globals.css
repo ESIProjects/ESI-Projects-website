@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.cdnfonts.com/css/mona-sans');
+@import url('https://fonts.cdnfonts.com/css/hubot-sans');
+
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../public/fonts/Mona-Sans.woff2") format("woff2 supports variations"), url("../public/fonts/Mona-Sans.woff2") format("woff2-variations");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -18,10 +27,11 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: #FFF8EE;
+}
+.navbar{
+  background-color: #fcead1;
+}
+.monaSans{
+  font-family: "Mona Sans";
 }
