@@ -49,3 +49,18 @@ body {
 .EsiTitle{
   background-color: #8a220240;
 }
+.topDownAnimation{
+    animation: float 2s ease-in-out infinite both;
+}
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-1rem);
+  }
+  100% {
+      transform: translateY(0);
+  }
+
+}

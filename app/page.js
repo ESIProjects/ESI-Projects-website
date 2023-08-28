@@ -1,10 +1,12 @@
 import logo from "../public/logo.png"
 import goalIcon from "../public/icons/targetArrow.svg"
+import codeIcon1 from "../public/codeIcons/code1.png"
+import EsiLogo from "../public/EsiLogo.png"
 import Image from 'next/image'
 
 export default function Home() {
   return (
-    <main className="min-h-screen w-full ">
+    <main className="min-h-screen w-full overflow-hidden ">
       <div className='m-auto container'>
         <div className='navbar m-auto w-5/6 mt-3 rounded-full h-16 flex items-center justify-between drop-shadow-lg border-solid border-black border-2  '>
           <Image src={logo} className="w-16 ml-10"></Image>
@@ -31,7 +33,7 @@ export default function Home() {
             Projects and Assignments.
           </h1>
 
-          <div className="monaSans mx-5 text-xl font-semibold flex flex-row items-center">
+          <div className="hubotSans mx-5 text-xl font-semibold flex flex-row items-center">
             <Image src={goalIcon} className="w-11 mx-2"></Image>
             <div className=" mx-2 bg-green-300 px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Explore</h1>
@@ -39,7 +41,7 @@ export default function Home() {
             <span>different assignments and Projects.</span>
           </div>
 
-          <div className="monaSans mx-5 text-xl font-semibold flex flex-row items-center">
+          <div className="hubotSans mx-5 text-xl font-semibold flex flex-row items-center">
             <Image src={goalIcon} className="w-11 mx-2"></Image>
             <div className=" mx-2 bg-red-300 px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Understand</h1>
@@ -47,7 +49,7 @@ export default function Home() {
             <span>how students developed it. </span>
           </div>
 
-          <div className="monaSans mx-5 text-xl font-semibold flex flex-row items-center">
+          <div className="hubotSans mx-5 text-xl font-semibold flex flex-row items-center">
             <Image src={goalIcon} className="w-11 mx-2"></Image>
             <div className=" mx-2 bg-blue-300 px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Develop</h1>
@@ -56,10 +58,15 @@ export default function Home() {
           </div>
 
         </div>
-        <div className="container basis-1/3">
-
+        <div className="container basis-1/3 relative flex items-center ">
+          <Image src={EsiLogo} className="relative z-10 w-72 topDownAnimation" ></Image>
+          <Image src={codeIcon1} className="absolute  top-10"></Image>
+          <Image src={codeIcon1} className="absolute right-24 bottom-10"></Image>
         </div>
       </div>
+      <div className=" m-auto flex justify-center items-center w-1/2 hubotSans h-10  bg-neutral-700 text-lg text-white font-bold rounded-full border-2 border-solid">
+          <p>This project is made by students & for students.  </p>
+        </div>
     </main>
   )
 }
