@@ -134,8 +134,8 @@ export default function Home() {
         </div>
 
         <div className="firstColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10">
-          <div className="monaSans firstColor text-lg lg:text-xl relative bottom-3 w-fit px-3 rounded-lg">
-            <Image src={qstMark} className="w-8 h-8 mr-3 inline"></Image> <span className="font-extrabold">Why</span> <span className=" font-base">ESI Projects</span> <span className="font-extrabold">while we already have</span> <span className=" font-base"> Tresor ESI</span>
+          <div className="monaSans firstColor text-base lg:text-xl relative bottom-3 w-fit px-3 rounded-lg">
+            <Image src={qstMark} className="w-5 h-5 md:w-8 md:h-8 mr-3 inline"></Image> <span className="font-extrabold">Why</span> <span className=" font-base">ESI Projects</span> <span className="font-extrabold">while we already have</span> <span className=" font-base"> Tresor ESI</span>
           </div>
           
           <p className="hubotSans font-semibold px-4 pb-2 lg:px-10  lg:pb-4 text-sm lg:text-lg">
@@ -148,8 +148,8 @@ export default function Home() {
         </div>
 
         <div className="firstColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10">
-          <div className="monaSans firstColor text-lg lg:text-xl relative bottom-3 w-fit px-3 rounded-lg">
-            <Image src={qstMark} className="w-8 h-8 mr-3 inline"></Image> <span className="font-extrabold">How will be the content of the repository updated ?</span>
+          <div className="monaSans firstColor text-base lg:text-xl relative bottom-3 w-fit px-3 rounded-lg">
+            <Image src={qstMark} className="w-5 h-5 md:w-8 md:h-8 mr-3 inline"></Image> <span className="font-extrabold">How will be the content of the repository updated ?</span>
           </div>
           
           <p className="hubotSans font-semibold px-4 pb-2 lg:px-10  lg:pb-4 text-sm lg:text-lg">
@@ -159,9 +159,9 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="warningColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10 flex flex-row space-x-3 justify-around">
-          <Image src={warning} className="w-8 h-8 my-3 mx-4"></Image>
-          <p className="hubotSans font-semibold py-2  lg:pb-4 text-sm lg:text-lg">
+        <div className="items-center lg:items-start warningColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10 flex flex-row space-x-3 justify-around">
+          <Image src={warning} className=" mx-1 w-6 h-6 md:w-8 md:h-8 my-3 md:mx-4"></Image>
+          <p className="hubotSans font-semibold py-2  lg:pb-4 text-xs lg:text-lg">
             We will try to set it updated at the end of each scholar year
             so that the next promo can benefit from the projects of the
             previous one.
@@ -171,22 +171,25 @@ export default function Home() {
         <Image src={codeIcon2} className=" absolute scale-125 -right-44 bottom-8 "></Image>
 
       </div>
+      <div className="container flex justify-center mb-5">
+        <p className=" monaSans font-extrabold text-xs lg:text-xl">Don’t forget to star the repo ⭐  and follow the project .</p>
+      </div>
       <footer className=" w-screen footerColor border-t-4 border-solid border-black ">
 
       <div className="container py-2 mx-auto">
         <div className="flex flex-col items-center text-center">
 
-            <p className="monaSans font-semibold max-w-lg mx-auto mt-2 text-white">We have to precise that this is not an official project by the school ESI, but just a project kick started by a student of the school for students of the school that is why we keep mentioning the school is logo.</p>
+            <p className="monaSans text-xs md:text-base font-semibold max-w-xl mx-auto mt-2 text-white">We have to precise that this is not an official project by the school ESI, but just a project kick started by a student of the school for students of the school that is why we keep mentioning the school is logo.</p>
 
-            <div className="flex flex-col mt-2 sm:flex-row sm:items-center sm:justify-center">
-                <button className=" monaSans hidden md:block bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black">
-                <svg xmlns="http://www.w3.org/2000/svg" className="inline mx-1" width="26" height="26" viewBox="0 0 16 16"><path fill="currentColor" d="M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5v-7ZM13 8V4.5A1.5 1.5 0 0 0 11.5 3h-7A1.5 1.5 0 0 0 3 4.5V8h2.5a.5.5 0 0 1 .5.5c0 .052.008.162.032.308c.041.247.115.493.228.718c.308.618.843.974 1.74.974s1.432-.356 1.74-.974c.113-.225.187-.47.228-.718c.024-.146.032-.256.032-.308a.5.5 0 0 1 .41-.492L10.5 8H13Z"/></svg>
+            <div className="flex flex-col mt-2 sm:flex-row sm:items-center sm:justify-center space-y-3 sm:space-y-0">
+                <button className=" monaSans bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" className="inline mx-1 w-6 h-6 md:w-10 md:h-10" width="26" height="26" viewBox="0 0 16 16"><path fill="currentColor" d="M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5v-7ZM13 8V4.5A1.5 1.5 0 0 0 11.5 3h-7A1.5 1.5 0 0 0 3 4.5V8h2.5a.5.5 0 0 1 .5.5c0 .052.008.162.032.308c.041.247.115.493.228.718c.308.618.843.974 1.74.974s1.432-.356 1.74-.974c.113-.225.187-.47.228-.718c.024-.146.032-.256.032-.308a.5.5 0 0 1 .41-.492L10.5 8H13Z"/></svg>
                   <span className="mx-1">Reach us on email</span>
                 </button>
 
-                <button className=" monaSans hidden md:block bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black">
+                <button className=" monaSans bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black">
                 <div className="inline">
-                <svg xmlns="http://www.w3.org/2000/svg" className="inline mx-2" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" className="inline mx-2 w-6 h-6 md:w-10 md:h-10" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
                 </div>
                   github profile
                 </button>
