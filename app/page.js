@@ -20,7 +20,7 @@ export default function Home() {
           <p className="monaSans hidden md:block font-bold hover:font-black text-xl hover:text-2xl transition-all duration-500 cursor-pointer hover:drop-shadow-lg">Overview</p>
           <p className="monaSans hidden md:block font-bold hover:font-black text-xl hover:text-2xl transition-all duration-500 cursor-pointer hover:drop-shadow-lg">Insight</p>
           <button className=" monaSans hidden md:block bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black"> contribute </button>
-          <button className="bg-orange-200 rounded-lg border-solid border-black border-2 p-1 mr-6 lg:hidden">
+          <button className="bg-orange-200 rounded-lg border-solid border-black border-2 p-1 mr-6 md:hidden">
             <Image src={menu} className="w-8"></Image>
           </button>
         </div>
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className=" m-auto flex justify-center items-center w-fit lg:w-1/2 hubotSans h-10  bg-neutral-700 text-sm px-4 lg:px-0 lg:text-lg text-white font-bold rounded-full border-2 border-solid">
+      <div className="relative z-10 m-auto flex justify-center items-center w-fit lg:w-1/2 hubotSans h-10  bg-neutral-700 text-sm px-4 lg:px-0 lg:text-lg text-white font-bold rounded-full border-2 border-solid">
           <p>This project is made by students & for students.  </p>
       </div>
 
@@ -91,14 +91,14 @@ export default function Home() {
               d'Informatique (Ex. INI)).
             </p>
           </div>
-          <Image src={codeIcon2} className="absolute scale-110 lg:scale-100 bottom-48 right-20 lg:right-96 lg:bottom-20 "></Image>
-          <Image src={codeIcon2} className="absolute scale-110 lg:scale-100 top-48 left-20 lg:left-96 lg:top-20"></Image>
+          <Image src={codeIcon2} className="absolute  bottom-28 right-20 md:scale-75 md:right-32 lg:right-96 lg:bottom-20 "></Image>
+          <Image src={codeIcon2} className="absolute  top-28 left-20 md:scale-75 md:left-32  lg:left-96 lg:top-20"></Image>
         </div>
 
-        <div className="container m-auto my-8">
+        <div className="container m-auto my-8 firstColor rounded-lg relative z-10">
           <h1 className="monaSans text-lg lg:text-2xl font-extrabold underline">GITHUB repository</h1>
           <div className=" flex lg:flex-row flex-col items-center">
-            <div className=" lg:basis-3/4 hubotSans text-sm lg:text-lg font-semibold">
+            <div className=" lg:basis-3/4 hubotSans text-sm lg:text-lg font-semibold ">
               Simply the projects are for now organized
               in a GitHub repository where projects aka
               TPs are organized by level and by course.
@@ -109,10 +109,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="container m-auto my-8">
+        <div className="container m-auto my-8 firstColor rounded-lg relative z-10">
           <h1 className="monaSans text-lg lg:text-2xl font-extrabold underline">Contribution</h1>
           <div className=" flex lg:flex-row flex-col items-center">
-            <div className=" lg:basis-3/4 hubotSans text-sm lg:text-lg font-semibold">
+            <div className=" lg:basis-3/4 hubotSans text-sm lg:text-lg font-semibold ">
               If you have a project or “Tp” and you
               want to share it with us through google form.
             </div>
