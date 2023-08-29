@@ -78,5 +78,8 @@ body {
 -moz-box-shadow: 6px 8px 15px 0px rgba(0,0,0,0.43);
 }
 .warningColor{
-  background-color: #ffb5b569;
+  background-color: #fecacaf5;
+}
+.footerColor{
+  background-color: #3D3D3D;
 }

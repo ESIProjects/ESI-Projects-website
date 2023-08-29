@@ -7,6 +7,7 @@ import menu from "../public/icons/menu.png"
 import scroll from "../public/icons/arrowDown.png"
 import qstMark from "../public/icons/question.png"
 import warning from "../public/icons/danger.png"
+import githubIcon from "../public/icons/github.svg"
 import Image from 'next/image'
 
 export default function Home() {
@@ -166,8 +167,39 @@ export default function Home() {
             previous one.
           </p>
         </div>
+        <Image src={codeIcon2} className=" absolute scale-125 -left-44 top-8"></Image>
+        <Image src={codeIcon2} className=" absolute scale-125 -right-44 bottom-8 "></Image>
 
       </div>
+      <footer className=" w-screen footerColor border-t-4 border-solid border-black ">
+
+      <div className="container py-2 mx-auto">
+        <div className="flex flex-col items-center text-center">
+
+            <p className="monaSans font-semibold max-w-lg mx-auto mt-2 text-white">We have to precise that this is not an official project by the school ESI, but just a project kick started by a student of the school for students of the school that is why we keep mentioning the school is logo.</p>
+
+            <div className="flex flex-col mt-2 sm:flex-row sm:items-center sm:justify-center">
+                <button className=" monaSans hidden md:block bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black">
+                <svg xmlns="http://www.w3.org/2000/svg" className="inline mx-1" width="26" height="26" viewBox="0 0 16 16"><path fill="currentColor" d="M2 4.5A2.5 2.5 0 0 1 4.5 2h7A2.5 2.5 0 0 1 14 4.5v7a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 11.5v-7ZM13 8V4.5A1.5 1.5 0 0 0 11.5 3h-7A1.5 1.5 0 0 0 3 4.5V8h2.5a.5.5 0 0 1 .5.5c0 .052.008.162.032.308c.041.247.115.493.228.718c.308.618.843.974 1.74.974s1.432-.356 1.74-.974c.113-.225.187-.47.228-.718c.024-.146.032-.256.032-.308a.5.5 0 0 1 .41-.492L10.5 8H13Z"/></svg>
+                  <span className="mx-1">Reach us on email</span>
+                </button>
+
+                <button className=" monaSans hidden md:block bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black">
+                <div className="inline">
+                <svg xmlns="http://www.w3.org/2000/svg" className="inline mx-2" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/></svg>
+                </div>
+                  github profile
+                </button>
+            </div>
+        </div>
+
+        <hr className="my-4 border-black border-2 " />
+
+        <div className=" flex items-center justify-center ">
+            <p className="text-sm text-white font-bold">© 2023-2024 ESI Projects</p>
+        </div>
+    </div>
+      </footer>
     </main>
   )
 }
