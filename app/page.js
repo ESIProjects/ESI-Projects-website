@@ -5,6 +5,8 @@ import codeIcon2 from "../public/codeIcons/code2.png"
 import EsiLogo from "../public/EsiLogo.png"
 import menu from "../public/icons/menu.png"
 import scroll from "../public/icons/arrowDown.png"
+import qstMark from "../public/icons/question.png"
+import warning from "../public/icons/danger.png"
 import Image from 'next/image'
 
 export default function Home() {
@@ -83,7 +85,8 @@ export default function Home() {
         <div className="m-auto relative">
           <div className="firstColor border-solid border-2 border-black rounded-lg extraShadow relative z-10">
             <div className="monaSans firstColor text-2xl lg:text-3xl font-extrabold underline underline-offset-8 relative bottom-5 w-fit px-5 m-auto rounded-lg"> ESI Projects</div>
-            <p className="hubotSans font-semibold px-4 pb-2 lg:px-10  lg:pb-4 text-sm lg:text-lg">It is the place where you can find previous projects
+            <p className="hubotSans font-semibold px-4 pb-2 lg:px-10  lg:pb-4 text-sm lg:text-lg">
+              It is the place where you can find previous projects
               x developed by students for different assignments
               and labs in the computer science engineering
               classes taken at Higher National School of
@@ -114,12 +117,54 @@ export default function Home() {
           <div className=" flex lg:flex-row flex-col items-center">
             <div className=" lg:basis-3/4 hubotSans text-sm lg:text-lg font-semibold ">
               If you have a project or “Tp” and you
-              want to share it with us through google form.
+              want to share it with us through google form
             </div>
             <div className=" lg:basis-1/4">
               <button className="monaSans md:block bg-neutral-800 text-white p-2 my-3 lg:my-0 lg:mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-3  transition-all duration-500 hover:bg-orange-200 hover:text-black">Contribute</button>
             </div>
           </div>
+        </div>
+
+      </div>
+
+      <div className="container m-auto my-28 w-2/3 relative">
+        <div className="monaSans firstColor text-2xl lg:text-3xl font-extrabold underline underline-offset-8 relative bottom-5 w-fit px-5 m-auto rounded-lg">
+          <h1>FAQ</h1>
+        </div>
+
+        <div className="firstColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10">
+          <div className="monaSans firstColor text-lg lg:text-xl relative bottom-3 w-fit px-3 rounded-lg">
+            <Image src={qstMark} className="w-8 h-8 mr-3 inline"></Image> <span className="font-extrabold">Why</span> <span className=" font-base">ESI Projects</span> <span className="font-extrabold">while we already have</span> <span className=" font-base"> Tresor ESI</span>
+          </div>
+          
+          <p className="hubotSans font-semibold px-4 pb-2 lg:px-10  lg:pb-4 text-sm lg:text-lg">
+            Organizing all the projects in a GitHub repository will be
+            much effective since most of the project are already shared
+            in GitHub repositories and it also encourages students to
+            start using GitHub as a contribution tool, and a Hub for us
+            developers.
+          </p>
+        </div>
+
+        <div className="firstColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10">
+          <div className="monaSans firstColor text-lg lg:text-xl relative bottom-3 w-fit px-3 rounded-lg">
+            <Image src={qstMark} className="w-8 h-8 mr-3 inline"></Image> <span className="font-extrabold">How will be the content of the repository updated ?</span>
+          </div>
+          
+          <p className="hubotSans font-semibold px-4 pb-2 lg:px-10  lg:pb-4 text-sm lg:text-lg">
+            We will try to set it updated at the end of each scholar year
+            so that the next promo can benefit from the projects of the
+            previous one.
+          </p>
+        </div>
+
+        <div className="warningColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10 flex flex-row space-x-3 justify-around">
+          <Image src={warning} className="w-8 h-8 my-3 mx-4"></Image>
+          <p className="hubotSans font-semibold py-2  lg:pb-4 text-sm lg:text-lg">
+            We will try to set it updated at the end of each scholar year
+            so that the next promo can benefit from the projects of the
+            previous one.
+          </p>
         </div>
 
       </div>
