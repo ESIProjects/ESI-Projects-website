@@ -64,3 +64,16 @@ body {
   }
 
 }
+.firstColor{
+  background-color: #FFF8EE;
+}
+.extraShadow{
+  box-shadow: 6px 15px 24px -3px rgba(0,0,0,0.58);
+  -webkit-box-shadow: 6px 15px 24px -3px rgba(0,0,0,0.58);
+  -moz-box-shadow: 6px 15px 24px -3px rgba(0,0,0,0.58);
+}
+.mediumShadow{
+  box-shadow: 6px 8px 15px 0px rgba(0,0,0,0.43);
+-webkit-box-shadow: 6px 8px 15px 0px rgba(0,0,0,0.43);
+-moz-box-shadow: 6px 8px 15px 0px rgba(0,0,0,0.43);
+}
