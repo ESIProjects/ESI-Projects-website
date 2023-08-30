@@ -7,15 +7,45 @@ import menu from "../public/icons/menu.png"
 import scroll from "../public/icons/arrowDown.png"
 import qstMark from "../public/icons/question.png"
 import warning from "../public/icons/danger.png"
-import githubIcon from "../public/icons/github.svg"
+import gitBranch from "../public/icons/gitBranch.png"
+import gitStar from "../public/icons/gitStar.png"
 import Image from 'next/image'
 
+
+
+const fetchRepositories = async () => {
+  try {
+    const organization = 'ESIProjects';
+    const token = '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'; 
+  const response = await fetch(
+    `https://api.github.com/orgs/${organization}/repos`,
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+      cache:'no-store',
+    }
+  );
+
+  if (response.ok) {
+    const data = await response.json();
+    console.log(data);
+    // Repositories=data;
+  } else {
+    console.error('Error fetching repositories:', response.statusText);
+  }
+} catch (error) {
+  console.error('Error fetching repositories:', error);
+}
+};
+
 export default function Home() {
+  fetchRepositories();
   return (
     <main className="min-h-screen w-full overflow-hidden scroll-smooth">
-      <div className="fixed bottom-3 left-0 right-0 flex items-center justify-center lg:hidden">
+      {/* <div className="fixed bottom-3 left-0 right-0 flex items-center justify-center lg:hidden">
         <Image src={scroll} className=" animate-bounce w-11"></Image>
-      </div>
+      </div> */}
       <div className='m-auto  container'>
         <div className='navbar m-auto w-5/6 mt-4 rounded-full h-16 flex items-center justify-between mediumShadow border-solid border-black border-2  '>
           <Image src={logo} className="w-16 ml-10"></Image>
@@ -130,6 +160,36 @@ export default function Home() {
 
       <div className="container m-auto my-28 w-2/3 relative">
         <div className="monaSans firstColor text-2xl lg:text-3xl font-extrabold underline underline-offset-8 relative bottom-5 w-fit px-5 m-auto rounded-lg">
+          <h1>Insights</h1>
+        </div>
+        <div className=" container flex flex-row justify-between ">
+
+          <div>
+            <h1 className=" m-auto font-bold underline text-xl monaSans"> Recently added</h1>
+          </div>
+
+          <div className="flew flex-col space-y-3 ">
+            <div className="flex justify-center flex-col">
+              <h1 className=" m-auto font-bold underline text-xl monaSans"> Total contributions</h1>
+              <div className=" flex flex-row items-center justify-between space-x-8 p-8 my-5 m-auto extraShadow border-solid border-4 border-black rounded-lg firstColor">
+                <h1 className=" font-black text-6xl monaSans">16</h1>
+                <Image src={gitBranch} className=" "></Image>
+              </div>
+            </div>
+            <div className="flex justify-center flex-col">
+              <h1 className=" m-auto font-bold underline text-xl monaSans"> Total Stars</h1>
+              <div className=" flex flex-row items-center justify-between space-x-8 p-8 my-5 m-auto extraShadow border-solid border-4 border-black rounded-lg firstColor">
+                <h1 className=" font-black text-6xl monaSans">10</h1>
+                <Image src={gitStar} className=" "></Image>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>  
+
+      <div className="container m-auto my-28 w-2/3 relative">
+        <div className="monaSans firstColor text-2xl lg:text-3xl font-extrabold underline underline-offset-8 relative bottom-5 w-fit px-5 m-auto rounded-lg">
           <h1>FAQ</h1>
         </div>
 
@@ -162,9 +222,10 @@ export default function Home() {
         <div className="items-center lg:items-start warningColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10 flex flex-row space-x-3 justify-around">
           <Image src={warning} className=" mx-1 w-6 h-6 md:w-8 md:h-8 my-3 md:mx-4"></Image>
           <p className="hubotSans font-semibold py-2  lg:pb-4 text-xs lg:text-lg">
-            We will try to set it updated at the end of each scholar year
-            so that the next promo can benefit from the projects of the
-            previous one.
+            <span className=" font-black">This is only a first launch version of the project : </span>
+            We kickstarted this project with a basic setup, as you've
+            seen on our GitHub repository. After launch, we'll evaluate
+            and enhance it, growing our team for future versions. 
           </p>
         </div>
         <Image src={codeIcon2} className=" absolute scale-125 -left-44 top-8"></Image>
