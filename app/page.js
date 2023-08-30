@@ -66,7 +66,7 @@ export default function Home() {
         <div className="container px-6 lg:px-20 py-11 basis-2/3  ">
 
           <div className=" monaSans text-5xl md:text-7xl font-black flex flex-row items-center">
-            <div className=" EsiTitle mx-2 md:mx-4 rounded-3xl border-solid border-black border-4 px-3 py-1">
+            <div className=" shadow-md shadow-stone-500 EsiTitle mx-2 md:mx-4 rounded-3xl border-solid border-black border-4 px-3 py-1">
               <h1>ESI</h1>
             </div> 
             <span>Projects</span>
@@ -80,7 +80,7 @@ export default function Home() {
 
           <div className="hubotSans mx-1 md:mx-5 text-base md:text-xl font-semibold flex flex-row items-center">
             <Image src={goalIcon} className="w-8 h-8 lg:h-11  lg:w-11 mx-2"></Image>
-            <div className=" mx-1 md:mx-2 bg-green-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
+            <div className=" shadow-md shadow-green-400 mx-1 md:mx-2 bg-green-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Explore</h1>
             </div> 
             <span>different assignments and Projects.</span>
@@ -88,7 +88,7 @@ export default function Home() {
 
           <div className="hubotSans mx-1 md:mx-5 text-base md:text-xl font-semibold flex flex-row items-center">
             <Image src={goalIcon} className="w-8 h-8 lg:h-11  lg:w-11 mx-2"></Image>
-            <div className=" mx-1 md:mx-2 bg-red-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
+            <div className=" shadow-md shadow-red-400 mx-1 md:mx-2 bg-red-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Understand</h1>
             </div> 
             <span>how other students developed it. </span>
@@ -96,7 +96,7 @@ export default function Home() {
 
           <div className="hubotSans mx-1 md:mx-5 text-base md:text-xl font-semibold flex flex-row items-center">
             <Image src={goalIcon} className="w-8 h-8 lg:h-11 lg:w-11 mx-2"></Image>
-            <div className=" mx-1 md:mx-2 bg-blue-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
+            <div className=" shadow-md shadow-blue-400 mx-1 md:mx-2 bg-blue-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Develop</h1>
             </div> 
             <span>your own amazing projects .</span>
