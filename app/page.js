@@ -164,12 +164,11 @@ export default function Home() {
         <div className="monaSans firstColor text-2xl lg:text-3xl font-extrabold underline underline-offset-8 relative bottom-5 w-fit px-5 m-auto rounded-lg">
           <h1>Insights</h1>
         </div>
-        <div className=" container flex flex-row justify-between ">
+        <div className=" container flex flex-col space-y-8 md:space-y-0  md:flex-row justify-between ">
 
           <div className="flex space-y-5 flex-col items-center">
             <h1 className=" font-bold underline text-xl monaSans"> Recently added</h1>
-
-            <div className=" z-10 pb-2 firstColor extraShadow flex flex-col space-y-2 rounded-xl border-solid border-black border-4 ">
+            <div className="relative z-10 pb-2 firstColor shadow-black shadow-xl  hover:shadow-cyan-600 hover:shadow-lg flex flex-col space-y-2 rounded-xl border-solid border-black border-4 ">
                 <div className="text-2xl footerColor rounded-t-lg space-x-20 w-full p-4 flex flex-row justify-around items-center">
                     <h1 className=" font-black text-white monaSans">Year</h1>
                     <div className="flex flex-row justify-center items-center space-x-2">
@@ -211,20 +210,20 @@ export default function Home() {
                   </div>
                 </div>
             </div>
-            <Image src={codeBlock} className="absolute w-1/2 h-3/4 bottom-0"></Image>
+            
           </div>
 
           <div className="flex flex-col space-y-3 ">
             <div className="flex justify-center flex-col firstColor">
               <h1 className=" m-auto font-bold underline text-xl monaSans"> Total contributions</h1>
-              <div className=" flex flex-row items-center justify-between space-x-8 px-9 py-3 my-5 m-auto extraShadow border-solid border-4 border-black rounded-lg firstColor">
+              <div className=" shadow-black shadow-lg  hover:shadow-green-600 hover:shadow-lg flex flex-row items-center justify-between space-x-8 px-9 py-3 my-5 m-auto border-solid border-4 border-black rounded-lg firstColor">
                 <h1 className=" font-black text-6xl monaSans">16</h1>
                 <Image src={gitBranch} className=" "></Image>
               </div>
             </div>
             <div className="flex justify-center flex-col firstColor">
               <h1 className=" m-auto font-bold underline text-xl monaSans"> Total Stars</h1>
-              <div className=" flex flex-row items-center justify-between space-x-8 px-9 py-3 my-5 m-auto extraShadow border-solid border-4 border-black rounded-lg firstColor">
+              <div className=" shadow-black shadow-lg  hover:shadow-red-600 hover:shadow-lg flex flex-row items-center justify-between space-x-8 px-9 py-3 my-5 m-auto  border-solid border-4 border-black rounded-lg firstColor">
                 <h1 className=" font-black text-6xl monaSans">10</h1>
                 <Image src={gitStar} className=" "></Image>
               </div>
