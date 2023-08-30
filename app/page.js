@@ -9,7 +9,9 @@ import qstMark from "../public/icons/question.png"
 import warning from "../public/icons/danger.png"
 import gitBranch from "../public/icons/gitBranch.png"
 import gitStar from "../public/icons/gitStar.png"
+import codeBlock from "../public/codeIcons/codeBlock.png"
 import Image from 'next/image'
+import LastRepos from "./component/lastRepos"
 
 
 
@@ -164,21 +166,65 @@ export default function Home() {
         </div>
         <div className=" container flex flex-row justify-between ">
 
-          <div>
-            <h1 className=" m-auto font-bold underline text-xl monaSans"> Recently added</h1>
+          <div className="flex space-y-5 flex-col items-center">
+            <h1 className=" font-bold underline text-xl monaSans"> Recently added</h1>
+
+            <div className=" z-10 pb-2 firstColor extraShadow flex flex-col space-y-2 rounded-xl border-solid border-black border-4 ">
+                <div className="text-2xl footerColor rounded-t-lg space-x-20 w-full p-4 flex flex-row justify-around items-center">
+                    <h1 className=" font-black text-white monaSans">Year</h1>
+                    <div className="flex flex-row justify-center items-center space-x-2">
+                        <h3 className="font-black  text-white monaSans">Projects</h3>
+                    </div>
+                </div>
+                <div className=" mt-2 text-xl  rounded-t-lg space-x-20 w-full px-5 flex flex-row justify-around items-center">
+                  <h1 className=" font-extrabold text-black  hubotSans">1 CP</h1>
+                  <div className="flex flex-row justify-center items-center space-x-2">
+                    <h3 className="font-extrabold text-black hubotSans">12</h3>
+                  </div>
+                </div>
+                <hr className=" border-solid border-1 border-neutral-500 w-4/5 m-auto"></hr>
+                <div className=" text-xl  rounded-t-lg space-x-20 w-full px-5 flex flex-row justify-around items-center">
+                  <h1 className=" font-extrabold text-black  hubotSans">2 CP</h1>
+                  <div className="flex flex-row justify-center items-center space-x-2">
+                    <h3 className="font-extrabold text-black hubotSans">8</h3>
+                  </div>
+                </div>
+                <hr className=" border-solid border-1 border-neutral-500 w-4/5 m-auto"></hr>
+                <div className=" text-xl  rounded-t-lg space-x-20 w-full px-5 flex flex-row justify-around items-center">
+                  <h1 className=" font-extrabold text-black  hubotSans">1 CS</h1>
+                  <div className="flex flex-row justify-center items-center space-x-2">
+                    <h3 className="font-extrabold text-black hubotSans">3</h3>
+                  </div>
+                </div>
+                <hr className=" border-solid border-1 border-neutral-500 w-4/5 m-auto"></hr>
+                <div className=" text-xl  rounded-t-lg space-x-20 w-full px-5 flex flex-row justify-around items-center">
+                  <h1 className=" font-extrabold text-black  hubotSans">2 CS</h1>
+                  <div className="flex flex-row justify-center items-center space-x-2">
+                    <h3 className="font-extrabold text-black hubotSans">15</h3>
+                  </div>
+                </div>
+                <hr className=" border-solid border-1 border-neutral-500 w-4/5 m-auto"></hr>
+                <div className=" text-xl  rounded-t-lg space-x-20 w-full px-5 flex flex-row justify-around items-center">
+                  <h1 className=" font-extrabold text-black  hubotSans">3 CS</h1>
+                  <div className="flex flex-row justify-center items-center space-x-2">
+                    <h3 className="font-extrabold text-black hubotSans">2</h3>
+                  </div>
+                </div>
+            </div>
+            <Image src={codeBlock} className="absolute w-1/2 h-3/4 bottom-0"></Image>
           </div>
 
-          <div className="flew flex-col space-y-3 ">
-            <div className="flex justify-center flex-col">
+          <div className="flex flex-col space-y-3 ">
+            <div className="flex justify-center flex-col firstColor">
               <h1 className=" m-auto font-bold underline text-xl monaSans"> Total contributions</h1>
-              <div className=" flex flex-row items-center justify-between space-x-8 p-8 my-5 m-auto extraShadow border-solid border-4 border-black rounded-lg firstColor">
+              <div className=" flex flex-row items-center justify-between space-x-8 px-9 py-3 my-5 m-auto extraShadow border-solid border-4 border-black rounded-lg firstColor">
                 <h1 className=" font-black text-6xl monaSans">16</h1>
                 <Image src={gitBranch} className=" "></Image>
               </div>
             </div>
-            <div className="flex justify-center flex-col">
+            <div className="flex justify-center flex-col firstColor">
               <h1 className=" m-auto font-bold underline text-xl monaSans"> Total Stars</h1>
-              <div className=" flex flex-row items-center justify-between space-x-8 p-8 my-5 m-auto extraShadow border-solid border-4 border-black rounded-lg firstColor">
+              <div className=" flex flex-row items-center justify-between space-x-8 px-9 py-3 my-5 m-auto extraShadow border-solid border-4 border-black rounded-lg firstColor">
                 <h1 className=" font-black text-6xl monaSans">10</h1>
                 <Image src={gitStar} className=" "></Image>
               </div>
