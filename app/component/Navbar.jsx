@@ -19,7 +19,7 @@ const Navbar =()=>{
                 <a href="#contribute" className="monaSans hidden md:block font-bold hover:font-black text-xl hover:text-2xl transition-all duration-500 cursor-pointer hover:drop-shadow-lg">Contribute</a>
                 <a href="#insights" className="monaSans hidden md:block font-bold hover:font-black text-xl hover:text-2xl transition-all duration-500 cursor-pointer hover:drop-shadow-lg">Insights</a>
                 <a href="#faq" className="monaSans hidden md:block font-bold hover:font-black text-xl hover:text-2xl transition-all duration-500 cursor-pointer hover:drop-shadow-lg">FAQ</a>
-                <button className=" monaSans hidden md:block bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black"> contribute </button>
+                <button className=" monaSans hidden md:block bg-neutral-800 text-white p-1 mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-2  transition-all duration-500 hover:bg-orange-200 hover:text-black"><a href="https://github.com/ESIProjects/ESI-Projects">contribute </a> </button>
                 <button className="bg-orange-200 rounded-lg border-solid border-black border-2 p-1 mr-6 md:hidden">
                 <Image onClick={toggle} src={menu} className="w-8"></Image>
                 </button>
