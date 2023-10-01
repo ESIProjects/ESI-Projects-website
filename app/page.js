@@ -8,31 +8,33 @@ import gitBranch from "../public/icons/gitBranch.png"
 import gitStar from "../public/icons/gitStar.png"
 import Image from 'next/image'
 import Navbar from "./component/Navbar"
+import dotenv from 'dotenv';
+dotenv.config();
 
 const fetchRepositories = async () => {
-  try {
-    const organization = 'ESIProjects';
-    const token = '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'; 
-  const response = await fetch(
-    `https://api.github.com/orgs/${organization}/repos`,
-    {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-      cache:'no-store',
-    }
-  );
+//   try {
+//     const organization = 'ESIProjects';
+//     const token = process.env.GITHUB_TOKEN; 
+//   const response = await fetch(
+//     `https://api.github.com/orgs/${organization}/repos`,
+//     {
+//       headers: {
+//         Authorization: `Bearer ${token}`,
+//       },
+//       cache:'no-store',
+//     }
+//   );
 
-  if (response.ok) {
-    const data = await response.json();
-    console.log(data);
-    // Repositories=data;
-  } else {
-    console.error('Error fetching repositories:', response.statusText);
-  }
-} catch (error) {
-  console.error('Error fetching repositories:', error);
-}
+//   if (response.ok) {
+//     const data = await response.json();
+//     console.log(data);
+//     // Repositories=data;
+//   } else {
+//     console.error('Error fetching repositories:', response.statusText);
+//   }
+// } catch (error) {
+//   console.error('Error fetching repositories:', error);
+// }
 };
 
 export default function Home() {
@@ -62,7 +64,7 @@ export default function Home() {
           </h1>
 
           <div className="hubotSans mx-1 md:mx-5 text-base md:text-xl font-semibold flex flex-row items-center">
-            <Image src={goalIcon} className="w-8 h-8 lg:h-11  lg:w-11 mx-2"></Image>
+            <Image alt="" src={goalIcon} className="w-8 h-8 lg:h-11  lg:w-11 mx-2"></Image>
             <div className=" shadow-md shadow-green-400 mx-1 md:mx-2 bg-green-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Explore</h1>
             </div> 
@@ -70,7 +72,7 @@ export default function Home() {
           </div>
 
           <div className="hubotSans mx-1 md:mx-5 text-base md:text-xl font-semibold flex flex-row items-center">
-            <Image src={goalIcon} className="w-8 h-8 lg:h-11  lg:w-11 mx-2"></Image>
+            <Image alt="" src={goalIcon} className="w-8 h-8 lg:h-11  lg:w-11 mx-2"></Image>
             <div className=" shadow-md shadow-red-400 mx-1 md:mx-2 bg-red-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Understand</h1>
             </div> 
@@ -78,7 +80,7 @@ export default function Home() {
           </div>
 
           <div className="hubotSans mx-1 md:mx-5 text-base md:text-xl font-semibold flex flex-row items-center">
-            <Image src={goalIcon} className="w-8 h-8 lg:h-11 lg:w-11 mx-2"></Image>
+            <Image alt="" src={goalIcon} className="w-8 h-8 lg:h-11 lg:w-11 mx-2"></Image>
             <div className=" shadow-md shadow-blue-400 mx-1 md:mx-2 bg-blue-300 px-1 md:px-2 py-1 rounded-3xl border-solid border-black border">
               <h1>Develop</h1>
             </div> 
@@ -87,9 +89,9 @@ export default function Home() {
 
         </div>
         <div className="lg:container basis-1/3 relative flex items-center lg:m-0 m-auto  ">
-          <Image src={EsiLogo} className="relative z-10 w-44 md:w-72 topDownAnimation" ></Image>
-          <Image src={codeIcon1} className="absolute scale-110 lg:scale-100 left-16 top-20 lg:left-0  lg:-top-10"></Image>
-          <Image src={codeIcon1} className="absolute scale-110 lg:scale-100 right-16 bottom-28 lg:right-24 lg:-bottom-5"></Image>
+          <Image alt="" src={EsiLogo} className="relative z-10 w-44 md:w-72 topDownAnimation" ></Image>
+          <Image alt="" src={codeIcon1} className="absolute scale-110 lg:scale-100 left-16 top-20 lg:left-0  lg:-top-10"></Image>
+          <Image alt="" src={codeIcon1} className="absolute scale-110 lg:scale-100 right-16 bottom-28 lg:right-24 lg:-bottom-5"></Image>
         </div>
       </div>
 
@@ -107,11 +109,11 @@ export default function Home() {
               and labs in the computer science engineering
               classes taken at Higher National School of
               Computer Science (Ecole Nationale Supérieure
-              d'Informatique (Ex. INI)).
+              d Informatique (Ex. INI)).
             </p>
           </div>
-          <Image src={codeIcon2} className="absolute  bottom-28 right-20 md:scale-75 md:right-32 lg:right-96 lg:bottom-20 "></Image>
-          <Image src={codeIcon2} className="absolute  top-28 left-20 md:scale-75 md:left-32  lg:left-96 lg:top-20"></Image>
+          <Image alt="" src={codeIcon2} className="absolute  bottom-28 right-20 md:scale-75 md:right-32 lg:right-96 lg:bottom-20 "></Image>
+          <Image alt="" src={codeIcon2} className="absolute  top-28 left-20 md:scale-75 md:left-32  lg:left-96 lg:top-20"></Image>
         </div>
 
         <div className="container m-auto my-8 firstColor rounded-lg relative z-10">
@@ -123,7 +125,7 @@ export default function Home() {
               TPs are organized by level and by course.
             </div>
             <div className=" lg:basis-1/4">
-              <button className="monaSans md:block bg-neutral-800 text-white p-2 my-3 lg:my-0 lg:mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-3  transition-all duration-500 hover:bg-orange-200 hover:text-black">Explore</button>
+              <button className="monaSans md:block bg-neutral-800 text-white p-2 my-3 lg:my-0 lg:mx-4 rounded-xl border-solid border-black border-4 font-bold hover:drop-shadow-lg hover:p-3  transition-all duration-500 hover:bg-orange-200 hover:text-black"><a href="https://github.com/ESIProjects/ESI-Projects">Explore </a></button>
             </div>
           </div>
         </div>
@@ -201,14 +203,14 @@ export default function Home() {
               <h1 className=" m-auto font-bold underline text-xl monaSans"> Total contributions</h1>
               <div className=" shadow-black shadow-lg  hover:shadow-green-600 hover:shadow-lg flex flex-row items-center justify-between space-x-8 px-9 py-3 my-5 m-auto border-solid border-4 border-black rounded-lg firstColor">
                 <h1 className=" font-black text-6xl monaSans">16</h1>
-                <Image src={gitBranch} className=" "></Image>
+                <Image alt="" src={gitBranch} className=" "></Image>
               </div>
             </div>
             <div className="flex justify-center flex-col firstColor">
               <h1 className=" m-auto font-bold underline text-xl monaSans"> Total Stars</h1>
               <div className=" shadow-black shadow-lg  hover:shadow-red-600 hover:shadow-lg flex flex-row items-center justify-between space-x-8 px-9 py-3 my-5 m-auto  border-solid border-4 border-black rounded-lg firstColor">
                 <h1 className=" font-black text-6xl monaSans">10</h1>
-                <Image src={gitStar} className=" "></Image>
+                <Image alt="" src={gitStar} className=" "></Image>
               </div>
             </div>
           </div>
@@ -223,7 +225,7 @@ export default function Home() {
 
         <div className="firstColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10">
           <div className="monaSans firstColor text-base lg:text-xl relative bottom-3 w-fit px-3 rounded-lg">
-            <Image src={qstMark} className="w-5 h-5 md:w-8 md:h-8 mr-3 inline"></Image> <span className="font-extrabold">Why</span> <span className=" font-base">ESI Projects</span> <span className="font-extrabold">while we already have</span> <span className=" font-base"> Tresor ESI</span>
+            <Image alt="" src={qstMark} className="w-5 h-5 md:w-8 md:h-8 mr-3 inline"></Image> <span className="font-extrabold">Why</span> <span className=" font-base">ESI Projects</span> <span className="font-extrabold">while we already have</span> <span className=" font-base"> Tresor ESI</span>
           </div>
           
           <p className="hubotSans font-semibold px-4 pb-2 lg:px-10  lg:pb-4 text-sm lg:text-lg">
@@ -237,7 +239,7 @@ export default function Home() {
 
         <div className="firstColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10">
           <div className="monaSans firstColor text-base lg:text-xl relative bottom-3 w-fit px-3 rounded-lg">
-            <Image src={qstMark} className="w-5 h-5 md:w-8 md:h-8 mr-3 inline"></Image> <span className="font-extrabold">How will be the content of the repository updated ?</span>
+            <Image alt="" src={qstMark} className="w-5 h-5 md:w-8 md:h-8 mr-3 inline"></Image> <span className="font-extrabold">How will be the content of the repository updated ?</span>
           </div>
           
           <p className="hubotSans font-semibold px-4 pb-2 lg:px-10  lg:pb-4 text-sm lg:text-lg">
@@ -248,16 +250,16 @@ export default function Home() {
         </div>
 
         <div className="items-center lg:items-start warningColor my-10 border-solid border-2 border-black rounded-lg mediumShadow relative z-10 flex flex-row space-x-3 justify-around">
-          <Image src={warning} className=" mx-1 w-6 h-6 md:w-8 md:h-8 my-3 md:mx-4"></Image>
+          <Image alt="" src={warning} className=" mx-1 w-6 h-6 md:w-8 md:h-8 my-3 md:mx-4"></Image>
           <p className="hubotSans font-semibold py-2  lg:pb-4 text-xs lg:text-lg">
             <span className=" font-black">This is only a first launch version of the project : </span>
-            We kickstarted this project with a basic setup, as you've
-            seen on our GitHub repository. After launch, we'll evaluate
+            We kickstarted this project with a basic setup, as you have
+            seen on our GitHub repository. After launch, we will evaluate
             and enhance it, growing our team for future versions. 
           </p>
         </div>
-        <Image src={codeIcon2} className=" absolute scale-125 -left-44 top-8"></Image>
-        <Image src={codeIcon2} className=" absolute scale-125 -right-44 bottom-8 "></Image>
+        <Image alt="" src={codeIcon2} className=" absolute scale-125 -left-44 top-8"></Image>
+        <Image alt="" src={codeIcon2} className=" absolute scale-125 -right-44 bottom-8 "></Image>
 
       </div>
       <div className="container flex justify-center mb-5">
