@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/*
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them!
+*/
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: 120px 24px 160px 24px;
+    pointer-events: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.main:before {
+    background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+    position: absolute;
+    content: "";
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.main:after {
+    content: "";
+    background-image: url("/assets/images/grid.svg");
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.4;
+    filter: invert(1);
+}
+
+.gradient {
+    height: fit-content;
+    z-index: 3;
+    width: 100%;
+    max-width: 640px;
+    background-image: radial-gradient(
+            at 27% 37%,
+            hsla(215, 98%, 61%, 0.1) 0px,
+            #FFF8EE 100%
+    ),
+    radial-gradient(at 97% 21%, hsla(30, 100%, 25%, 1) 0px, #FFF8EE 50%),
+    radial-gradient(at 52% 99%, hsla(0, 100%, 50%, 1) 0px, #FFF8EE 50%),
+    radial-gradient(at 10% 29%, hsla(30, 100%, 75%, 1) 0px, #FFF8EE 50%),
+    radial-gradient(at 97% 96%, hsla(20, 100%, 50%, 1) 0px, #FFF8EE 50%),
+    radial-gradient(at 33% 50%, hsla(40, 100%, 50%, 1) 0px, #FFF8EE 50%),
+    radial-gradient(at 79% 53%, hsla(30, 50%, 50%, 1) 0px, #FFF8EE 50%);
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    filter: blur(100px) saturate(150%);
+    top: 80px;
+    opacity: 0.15;
+}
+
+@media screen and (max-width: 640px) {
+    .main {
+        padding: 0;
+    }
+}
+
+.app {
+    @apply relative z-10;
+}
