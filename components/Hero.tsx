@@ -7,7 +7,7 @@ import mouseIcon from "@/public/icons/mouseIcon.png"
 import Image from 'next/image'
 export default function Hero() {
     return (
-        <section id="overview" className="flex flex-col relative mt-40 max-sm:mt-20 w-3/4 max-sm:w-[80%]">
+        <section id="overview" className="flex flex-col relative mt-36 max-sm:mt-20 w-3/4 max-sm:w-[80%]">
         <div className="flex justify-between items-center max-sm:flex-col max-sm:items-start max-sm:inline-flex">
             <div className="flex flex-col justify-start gap-6 max-sm:gap-5">
                 <div className="flex flex-col justify-start gap-4 max-sm:gap-3">

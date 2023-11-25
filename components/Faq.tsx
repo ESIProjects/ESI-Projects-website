@@ -7,7 +7,7 @@ import {
 
 export default function Faq() {
     return (
-        <section id="faq" className="FAQ w-full h-full flex flex-col items-center justify-center mt-40 max-sm:mt-20 mb-4">
+        <section id="faq" className="FAQ w-full h-full flex flex-col items-center justify-center mt-32 max-sm:mt-20 mb-4">
             <div className="frame47 inline-flex flex-col items-center gap-10 w-[61%] max-sm:w-5/6">
                 <div className="frame22 flex p-1 justify-center items-center gap-1">
                     <h1 className="text-5xl underline font-extrabold text-[#3d3d3d]">FAQ</h1>

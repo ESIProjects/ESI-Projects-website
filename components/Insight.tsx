@@ -127,7 +127,7 @@ export default function Insight() {
         </div>
         <div className="frame39 flex flex-col items-start gap-[1.33rem]">
           <div className="frame37 flex flex-col items-start gap-6">
-            <h2 className="text-2xl font-extrabold underline text-[#3d3d3d]">
+            <h2 className="text-2xl font-extrabold underline text-[#3d3d3d] max-sm:mt-12">
               Total Contributions
             </h2>
             <div className="frame36 flex py-2 px-12 justify-center items-center gap-8 border-4 border-black border-solid shadow-buttonShadowGreen bg-[#F9F7F6]">
