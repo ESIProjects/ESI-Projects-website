@@ -17,7 +17,7 @@ const fetchRepositories = async () => {
   try {
     const organization = 'ESIProjects';
     const token = process.env.GITHUB_TOKEN;
-    const repoNames: string[] = ['1CP', '1CS', '2CP', '2CS-SIL', '2CS-SID', '2CS-SIQ', '2CS-SIT'];
+    const repoNames = ['1st year - 1CP', '3rd year - 1CS', '2nd year - 2CP', '4th year - 2CS-SIL', '4th year - 2CS-SID', '4th year - 2CS-SIQ', '4th year - 2CS-SIT'];
     const reposWithTP: RepoWithTP[] = [];
 
     for (const repoName of repoNames) {
@@ -41,6 +41,7 @@ const fetchRepositories = async () => {
     }
 
     console.log(reposWithTP);
+    return reposWithTP;
   } catch (error) {
     console.error('Error fetching repositories:', error);
   }

@@ -26,7 +26,7 @@ export default function Faq() {
                         </AccordionItem>
                         <AccordionItem value="item-2">
                             <AccordionTrigger className="border-black border-4 border-solid flex px-5 py-4 items-center text-2xl max-sm:text-sm font-bold bg-[#F9F7F6]">
-                                Can I add my project if I'm not an ESI student ?
+                                Can I add my project if I&apos;m not an ESI student ?
                             </AccordionTrigger>
                             <AccordionContent className="border-black border-4 border-solid border-t-0 flex py-4 px-6 justify-center items-center self-stretch text-[1rem]  max-sm:text-sm font-medium">
                                 This website is primarily created to host ESI projects, but if you want to share your work with us, you can do it and we can create an others section for it.
