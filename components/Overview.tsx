@@ -10,8 +10,8 @@ export default function Overview() {
                 <div className="frame22 bg-[#F9F7F6] flex p-2 justify-center items-center gap-2 absolute top-[-2.5rem]">
                     <p className="text-[#3D3D3D] text-5xl max-sm:text-2xl font-extrabold underline">ESI Projects</p>
                 </div>
-                <div className="frame23 inline-flex pt-8 px-4 pb-2 justify-center items-center gap-2 border-2 border-solid border-black shadow-buttonShadow bg-[#F9F7F6]">
-                    <p className="text-center text-2xl max-sm:text-[0.8rem] font-semibold">
+                <div className="frame23 inline-flex pt-8 px-4 pb-2 max-sm:py-4 justify-center items-center gap-2 border-2 border-solid border-black shadow-buttonShadow bg-[#F9F7F6]">
+                    <p className="text-center text-2xl max-sm:text-sm font-semibold">
                         It&apos;s the place where you can find previous projects developed by students for different assignments and labs in the computer science engineering classes taken at Higher National School of Computer Science (Ecole Nationale Supérieure d&apos;Informatique (Ex. INI)).
                     </p>
                 </div>

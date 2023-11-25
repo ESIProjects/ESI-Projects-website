@@ -16,6 +16,14 @@ export default function Faq() {
                     <Accordion type="single" collapsible className="w-full flex flex-col gap-4">
                         <AccordionItem value="item-1">
                             <AccordionTrigger className="border-black border-4 border-solid flex px-5 py-4 items-center text-2xl max-sm:text-sm font-bold bg-[#F9F7F6]">
+                                Why we created this website ?
+                            </AccordionTrigger>
+                            <AccordionContent className="border-black border-4 border-solid border-t-0 flex py-4 px-6 justify-center items-center self-stretch text-[1rem]  max-sm:text-sm font-medium">
+                                We anticipate that it will be a valuable resource for students who are doing there practical assignments, providing inspiration and a platform to learn from the work of their peers.
+                            </AccordionContent>
+                        </AccordionItem>
+                        <AccordionItem value="item-2">
+                            <AccordionTrigger className="border-black border-4 border-solid flex px-5 py-4 items-center text-2xl max-sm:text-sm font-bold bg-[#F9F7F6]">
                                 How will be the content of the repository updated ?
                             </AccordionTrigger>
                             <AccordionContent className="border-black border-4 border-solid border-t-0 flex py-4 px-6 justify-center items-center self-stretch text-[1rem]  max-sm:text-sm font-medium">
@@ -24,7 +32,7 @@ export default function Faq() {
                                 previous one.
                             </AccordionContent>
                         </AccordionItem>
-                        <AccordionItem value="item-2">
+                        <AccordionItem value="item-3">
                             <AccordionTrigger className="border-black border-4 border-solid flex px-5 py-4 items-center text-2xl max-sm:text-sm font-bold bg-[#F9F7F6]">
                                 Can I add my project if I&apos;m not an ESI student ?
                             </AccordionTrigger>
@@ -32,14 +40,13 @@ export default function Faq() {
                                 This website is primarily created to host ESI projects, but if you want to share your work with us, you can do it and we can create an others section for it.
                             </AccordionContent>
                         </AccordionItem>
-                        <AccordionItem value="item-3">
+                        <AccordionItem value="item-4">
                             <AccordionTrigger className="border-black border-4 border-solid flex px-5 py-4 items-center text-2xl max-sm:text-sm font-bold bg-[#F9F7F6]">
                                 Who made this website ?
                             </AccordionTrigger>
                             <AccordionContent className="border-black border-4 border-solid border-t-0 flex py-4 px-6 justify-center items-center self-stretch text-[1rem]  max-sm:text-sm font-medium">
                                 ELFARI9 is a collective of dedicated ESI students driven by a passion for development and a commitment to assisting others through our projects.
                             </AccordionContent>
-
                         </AccordionItem>
                     </Accordion>
                 </div>

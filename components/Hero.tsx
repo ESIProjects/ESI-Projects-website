@@ -5,9 +5,10 @@ import codeIcon2 from "@/public/codeIcons/code2.png"
 import mouseIcon from "@/public/icons/mouseIcon.png"
 
 import Image from 'next/image'
+import ScrollingMouse from "@/components/ScrollingMouse";
 export default function Hero() {
     return (
-        <section id="overview" className="flex flex-col relative mt-36 max-sm:mt-20 w-3/4 max-sm:w-[80%]">
+        <section id="overview" className="flex flex-col relative mt-28 max-sm:mt-20 w-3/4 max-sm:w-[80%]">
         <div className="flex justify-between items-center max-sm:flex-col max-sm:items-start max-sm:inline-flex">
             <div className="flex flex-col justify-start gap-6 max-sm:gap-5">
                 <div className="flex flex-col justify-start gap-4 max-sm:gap-3">
@@ -74,7 +75,7 @@ export default function Hero() {
                         <p className="text-[1rem] font-semibold ">This project is made by students & for students</p>
                     </div>
                 </div>
-                {/*<Image src={mouseIcon} alt="Mouse Icon" width={56} height={56}/>*/}
+                <ScrollingMouse />
             </div>
         </section>
     );

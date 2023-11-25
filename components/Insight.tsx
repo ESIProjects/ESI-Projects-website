@@ -47,8 +47,21 @@ const fetchRepositories = async () => {
   }
 };
 
-export default function Insight() {
+async function getStars(repoName: string) {
+    const url = `https://api.github.com/repos/${repoName}/stargazers_count`;
+    const response = await fetch(url);
+    if (response.ok) {
+      const data = await response.json();
+      return data.stargazers_count;
+    } else {
+      console.log(`Error fetching stars for ${repoName}: ${response.status}`);
+    }
+
+}
+
+export default async function Insight() {
   fetchRepositories();
+  const stars = await getStars("ESI-Projects");
   return (
     <section id="insights" className="Insight w-full h-full flex flex-col items-center justify-center max-sm:mt-20">
       <div className="frame22 mt-[8.79rem]">
