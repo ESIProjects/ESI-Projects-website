@@ -7,7 +7,7 @@ import mouseIcon from "@/public/icons/mouseIcon.png"
 import Image from 'next/image'
 export default function Hero() {
     return (
-        <section id="overview" className="flex flex-col relative mt-40 max-sm:mt-20 w-3/4">
+        <section id="overview" className="flex flex-col relative mt-40 max-sm:mt-20 w-3/4 max-sm:w-[80%]">
         <div className="flex justify-between items-center max-sm:flex-col max-sm:items-start max-sm:inline-flex">
             <div className="flex flex-col justify-start gap-6 max-sm:gap-5">
                 <div className="flex flex-col justify-start gap-4 max-sm:gap-3">
@@ -25,39 +25,39 @@ export default function Hero() {
                         Projects and Assignments.
                     </p>
                 </div>
-                <div className="flex flex-col items-start gap-2">
+                <div className="flex flex-col items-start gap-2 ">
 
                     <div className="flex items-center gap-4 max-sm:gap-3">
-                        <Image src={goalIcon} alt="Goals Icon" width={43} height={42}/>
+                            <Image src={goalIcon} alt="Goals Icon" className="object-cover w-10 h-10" width={43} height={42}/>
                         <div className="flex items-center gap-2">
                             <div className="drop-shadow-lightShadow">
                                 <div className="inline-flex px-2 py-1 justify-center items-center gap-2 rounded-lg border-2 border-solid border-black bg-[#37ABDB]">
-                                    <p className="text-xl max-sm:text-[1rem] font-extrabold">Explore</p>
+                                    <p className="text-xl max-sm:text-sm font-extrabold">Explore</p>
                                 </div>
                             </div>
-                            <p className="text-xl max-sm:text-[1rem] font-semibold">different assignments and Projects</p>
+                            <p className="text-xl max-sm:text-sm font-semibold">different assignments and Projects</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-4 max-sm:gap-3">
-                        <Image src={goalIcon} alt="Goals Icon" width={43} height={42}/>
+                            <Image src={goalIcon} alt="Goals Icon" className="object-cover w-10 h-10" width={43} height={42}/>
                         <div className="flex items-center gap-2">
                             <div className="drop-shadow-lightShadow">
                                 <div className="inline-flex px-2 py-1 justify-center items-center gap-2 rounded-lg border-2 border-solid border-black bg-[#FFCCC4]">
-                                    <p className="text-xl max-sm:text-[1rem] font-extrabold">Understand</p>
+                                    <p className="text-xl max-sm:text-sm font-extrabold">Understand</p>
                                 </div>
                             </div>
-                            <p className="text-xl max-sm:text-[1rem] font-semibold">how students developed it</p>
+                            <p className="text-xl max-sm:text-sm font-semibold">how students developed it</p>
                         </div>
                     </div>
                     <div className="flex items-center gap-4 max-sm:gap-3">
-                        <Image src={goalIcon} alt="Goals Icon" width={43} height={42}/>
+                            <Image src={goalIcon} alt="Goals Icon" className="object-cover w-10 h-10" width={43} height={42}/>
                         <div className="flex items-center gap-2">
                             <div className="drop-shadow-lightShadow">
                                 <div className="inline-flex px-2 py-1 justify-center items-center gap-2 rounded-lg border-2 border-solid border-black bg-[#B0EFC6]">
-                                    <p className="text-xl max-sm:text-[1rem] font-extrabold">Develop</p>
+                                    <p className="text-xl max-sm:text-sm font-extrabold">Develop</p>
                                 </div>
                             </div>
-                            <p className="text-xl max-sm:text-[1rem] font-semibold">your own project</p>
+                            <p className="text-xl max-sm:text-sm font-semibold">your own project</p>
                         </div>
                     </div>
                 </div>
@@ -74,7 +74,7 @@ export default function Hero() {
                         <p className="text-[1rem] font-semibold ">This project is made by students & for students</p>
                     </div>
                 </div>
-                <Image src={mouseIcon} alt="Mouse Icon" width={56} height={56}/>
+                {/*<Image src={mouseIcon} alt="Mouse Icon" width={56} height={56}/>*/}
             </div>
         </section>
     );

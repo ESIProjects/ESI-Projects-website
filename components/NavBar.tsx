@@ -10,14 +10,9 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import Image from "next/image";
-import { useState } from "react";
 import {useScrollDirection} from "@/hooks/useScrollDirection";
 
 export default function NavBar() {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const toggle = () => {
-    setMenuIsOpen(!menuIsOpen);
-  };
     const scrollDirection = useScrollDirection();
 
   return (
@@ -64,46 +59,47 @@ export default function NavBar() {
           contribute
         </a>
       </button>
-      <DropdownMenu>
-        <DropdownMenuTrigger>
-            <Image
-              onClick={toggle}
-              alt="Toggle button"
-              src={menu}
-              className="hidden max-sm:block"
-              width={300}
-              height={300}
-            />
-        </DropdownMenuTrigger>
-          <DropdownMenuContent>
-              <DropdownMenuItem>
-                  <a
-                      href="#overview"
+      <div className="md:hidden">
+          <DropdownMenu>
+              <DropdownMenuTrigger>
+                  <Image
+                      alt="Toggle button"
+                      src={menu}
+                      className="hidden max-sm:block"
+                      width={300}
+                      height={300}
+                  />
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                  <DropdownMenuItem>
+                      <a
+                          href="#overview"
+                      >
+                          Overview
+                      </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem>
+                      <a
+                          href="#insights"
+                      >
+                          Insights
+                      </a>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem><a
+                      href="#faq"
                   >
-                      Overview
-                  </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                  <a
-                  href="#insights"
-              >
-                  Insights
-              </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem><a
-                  href="#faq"
-              >
-                  FAQ
-              </a></DropdownMenuItem>
-              <DropdownMenuItem><a
-                  href="#contact"
-              >
-                  Contact Us
-              </a></DropdownMenuItem>
-              <DropdownMenuSeparator />
-              <DropdownMenuLabel><a href="https://docs.google.com/forms/d/e/1FAIpQLScUQ5toGjDysObDA_wD3QnYdMyh70-1MArTPkVXGkfSIqX--Q/viewform">Contribute</a></DropdownMenuLabel>
-          </DropdownMenuContent>
-      </DropdownMenu>
+                      FAQ
+                  </a></DropdownMenuItem>
+                  <DropdownMenuItem><a
+                      href="#contact"
+                  >
+                      Contact Us
+                  </a></DropdownMenuItem>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuLabel><a href="https://docs.google.com/forms/d/e/1FAIpQLScUQ5toGjDysObDA_wD3QnYdMyh70-1MArTPkVXGkfSIqX--Q/viewform">Contribute</a></DropdownMenuLabel>
+              </DropdownMenuContent>
+          </DropdownMenu>
+      </div>
     </nav>
   );
 }

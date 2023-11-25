@@ -7,18 +7,18 @@ export default function Overview() {
         <section id="overview" className="Overview w-[80rem] h-[45rem] max-sm:w-[90%] max-sm:h-[34.5rem] flex flex-col items-center justify-center relative">
             <div className="frame25 w-[40rem] h-[35rem] max-sm:w-[90%] max-sm:h-[34.5rem] inline-flex flex-col justify-center items-center gap-9 mt-[7.31rem] max-sm:mt-[13rem]">
             <div className="groupe30 relative flex justify-center items-center">
-                <div className="frame22 bg-[#FFF8EE] flex p-2 justify-center items-center gap-2 absolute top-[-2.5rem]">
+                <div className="frame22 bg-[#F9F7F6] flex p-2 justify-center items-center gap-2 absolute top-[-2.5rem]">
                     <p className="text-[#3D3D3D] text-5xl max-sm:text-2xl font-extrabold underline">ESI Projects</p>
                 </div>
-                <div className="frame23 inline-flex pt-8 px-4 pb-2 justify-center items-center gap-2 border-2 border-solid border-black shadow-buttonShadow">
+                <div className="frame23 inline-flex pt-8 px-4 pb-2 justify-center items-center gap-2 border-2 border-solid border-black shadow-buttonShadow bg-[#F9F7F6]">
                     <p className="text-center text-2xl max-sm:text-[0.8rem] font-semibold">
                         It’s the place where you can find previous projects developed by students for different assignments and labs in the computer science engineering classes taken at Higher National School of Computer Science (Ecole Nationale Supérieure d'Informatique (Ex. INI)).
                     </p>
                 </div>
 
             </div>
-                <Image alt="" src={codeIcon1} className="max-sm:hidden absolute scale-[75%] right-[-7rem] top-[10rem] -z-10" />
-                <Image alt="" src={codeIcon2} className="max-sm:hidden absolute scale-[75%] left-[-7rem] bottom-[3rem] -z-10" />
+                <Image alt="" src={codeIcon1} className="max-sm:hidden absolute scale-[110%] right-10 top-[10rem] -z-10" />
+                <Image alt="" src={codeIcon2} className="max-sm:hidden absolute scale-[110%] left-10 bottom-[-4rem] -z-10" />
             <div className="frame24 flex flex-col justify-start gap-2">
                 <div className="frame20 flex max-sm:flex-col max-sm:gap-4 w-[38.9rem] max-sm:w-[20.4rem] justify-between items-center">
                     <div className="frame19 flex flex-col justify-start gap-3">
