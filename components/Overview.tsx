@@ -12,7 +12,7 @@ export default function Overview() {
                 </div>
                 <div className="frame23 inline-flex pt-8 px-4 pb-2 justify-center items-center gap-2 border-2 border-solid border-black shadow-buttonShadow bg-[#F9F7F6]">
                     <p className="text-center text-2xl max-sm:text-[0.8rem] font-semibold">
-                        It&apos;s the place where you can find previous projects developed by students for different assignments and labs in the computer science engineering classes taken at Higher National School of Computer Science (Ecole Nationale Supérieure d'Informatique (Ex. INI)).
+                        It&apos;s the place where you can find previous projects developed by students for different assignments and labs in the computer science engineering classes taken at Higher National School of Computer Science (Ecole Nationale Supérieure d&apos;Informatique (Ex. INI)).
                     </p>
                 </div>
 
