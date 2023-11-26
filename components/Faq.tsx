@@ -51,7 +51,7 @@ export default function Faq() {
                     </Accordion>
                 </div>
             </div>
-            <h1 className="text-2xl max-sm:text-xl font-semibold mt-20 max-sm:mt-10 text-center">Don’t forget to star the repo ⭐ and follow the project</h1>
+            <h1 className="text-2xl max-sm:text-xl font-semibold mt-20 mb-4 max-sm:mt-10 text-center">Don’t forget to star the repo ⭐ and follow the project</h1>
         </section>
     );
 }

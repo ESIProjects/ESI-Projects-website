@@ -47,8 +47,10 @@ const fetchRepositories = async () => {
   }
 };
 
+
+
 async function getStars(repoName: string) {
-    const url = `https://api.github.com/repos/${repoName}/stargazers_count`;
+    const url = `https://api.github.com/repos/ESIProjects/${repoName}`;
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
@@ -59,8 +61,29 @@ async function getStars(repoName: string) {
 
 }
 
+
+async function checkTokenPermissions() {
+  const token = process.env.GITHUB_TOKEN;
+  console.log(token)
+  const url = 'https://api.github.com/user';
+  const response = await fetch(url, {
+    headers: {
+      Authorization: `token ${token}`,
+    },
+  });
+
+  if (response.ok) {
+    const data = await response.json();
+    console.log('Token permissions:', data);
+  } else {
+    console.log(`Error checking token permissions: ${response.status}`);
+  }
+}
+
+
 export default async function Insight() {
   fetchRepositories();
+  checkTokenPermissions()
   const stars = await getStars("ESI-Projects");
   return (
     <section id="insights" className="Insight w-full h-full flex flex-col items-center justify-center max-sm:mt-20">
@@ -154,7 +177,7 @@ export default async function Insight() {
               Total Stars
             </h2>
             <div className="frame36 flex py-2 px-12 justify-center items-center gap-8 border-4 border-black border-solid shadow-buttonShadowRed bg-[#F9F7F6]">
-              <p className="text-[4rem] font-extrabold">1</p>
+              <p className="text-[4rem] font-extrabold">{stars}</p>
               <Image src={gitStar} alt="git star" width={50} height={50} />
               {/*TODO: Get data dynamically*/}
             </div>
