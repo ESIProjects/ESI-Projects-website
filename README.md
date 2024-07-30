@@ -1,4 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="text-align: center;">
+  <img src="./public/icons/logo.png" alt="ESI-Projects-website logo" style="max-width: 100%; height: auto;">
+</div>
+
+## ESI Projects Website:
+Welcome to the ESI Projects website! This site showcases a collection of projects developed by students for different assignments and labs in the computer science engineering classes taken at Higher National School of Computer Science (Ecole Nationale Supérieure d'Informatique).
+
+You can view the live site at: [https://esiprojects.vercel.app/](https://esiprojects.vercel.app/)
+
+## Features:
+
+## Technologies Used:
+
+- **Frontend**: React.js, Tailwind
+- **Hosting**: Vercel
+
 
 ## Getting Started
 
@@ -18,17 +33,16 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+The site is deployed on Vercel. For deployment, follow these steps:
+- Ensure your changes are committed and pushed to the main branch of your GitHub repository.
+- Vercel automatically deploys your site on push to the main branch. For manual deployment, you can trigger a deployment through the Vercel dashboard.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact:
+For any inquiries or issues, please reach out to:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Email:  esi-projects@proton.me
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Thank you for visiting the ESI Projects website!
