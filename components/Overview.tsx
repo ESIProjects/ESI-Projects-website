@@ -35,7 +35,7 @@ export default function Overview() {
                         <p className="text-xl max-sm:text-sm font-semibold">If you have a project or “TP” and you want to share it with us through google form.</p>
                     </div>
                     <button className="groupe32 w-[9.6rem] h-[3.7rem] max-sm:w-auto max-sm:h-auto flex-shrink-0 inline-flex justify-center items-center gap-2 max-sm:px-4 max-sm:py-2 py-3 px-6 rounded-md bg-[#B0EFC6] border-2 border-black border-solid shadow-buttonShadow hover:opacity-90 hover:scale-95 hover:outline-0 hover:shadow-none active:shadow-none transition">
-                        <a  className="text-2xl max-sm:text-[1rem] font-extrabold" href="https://docs.google.com/forms/d/e/1FAIpQLScUQ5toGjDysObDA_wD3QnYdMyh70-1MArTPkVXGkfSIqX--Q/viewform">Contribute</a>
+                        <a  className="text-2xl max-sm:text-[1rem] font-extrabold" href="https://forms.gle/31MuJFEcgyaxgT1w9">Contribute</a>
                     </button>
                 </div>
             </div>
